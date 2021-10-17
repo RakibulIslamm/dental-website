@@ -1,0 +1,126 @@
+// Header
+* LOGO
+* Menu
+    Home
+    About us
+    Doctors
+    Contact
+
+// Banner
+title: Get the smile you've always wanted —
+sub: A full range of cosmetic dentistry treatment!
+button: Book an appointment
+** img
+    https://i.ibb.co/zHbXNdJ/banner.jpg
+    https://i.ibb.co/SckCDpv/banner2.jpg
+    https://i.ibb.co/fdfHRSg/Long-receding-line-or-queue-of-smiling-doctors-and-nurses-in-white-uniforms-wearing-stethoscopes-aro.jpg
+    https://i.ibb.co/Y8DYfRh/Dentists-Day-e1489408468342.jpg
+
+
+// About
+* We work around the clock
+* «Dental Clinic» is a quality, painless, convenient, safe and pleasant treatment.
+* We work only professionals
+
+
+// another About sec
+titl: Advanced Equipment and Best Dentists
+desc: For us, there are no minor aspects, because a quality result always depends on trifles:
+    A wide range of laboratory studies
+    Ultrasound examination
+    ECG, echocardiography
+    Consultations with specialized pediatricians
+
+
+
+// Why Choose Us?
+* Experienced Doctors
+* 20 Years of Experience
+* Successful Cases
+* Happy  Patient
+desc: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.
+** img
+    https://i.ibb.co/fSBHNnX/why-choose-us4.png
+    https://i.ibb.co/VwNqGNx/why-choose-us3.png
+    https://i.ibb.co/PrPqVhF/why-choose-us-1.jpg
+    https://i.ibb.co/jyn6Jhn/why-choose-us2.png
+    https://i.ibb.co/44hqY2t/why-choose-us1.png
+
+
+
+// Doctors
+* Dr.Samanta
+* Dr.Mark
+* Dr.Rebecca
+* Dr.Robert
+* Dr.Pitter Moris
+* Dr.Ostin Green
+title: Dentist
+desc: We want to instill a culture of hygiene, motivate patients to take care of their smile.
+** Img
+    https://i.ibb.co/pbqpQZs/team-08-540x640.jpg
+    https://i.ibb.co/1LGpNsb/team-02-540x640.jpg
+    https://i.ibb.co/XSsnM5r/Highly-qualified-young-black-dentist-posing-at-clinic-over-modern-cabinet-empty-space.jpg
+    https://i.ibb.co/9p8mFdN/doctors-img-4-2x-crop-u9102.jpg
+    https://i.ibb.co/yywCcC8/doctors-img-3-2x.jpg
+    https://i.ibb.co/9czNknL/doctors-img-1-2x-crop-u8372.jpg
+    https://i.ibb.co/X783YyB/doctors-img-2-2x.jpg
+
+
+
+
+// appointment form
+heading: Book an appointment
+desc: Feel free to book an appointment online or call us at +380 99 000 00 00
+* form
+    name
+    email
+    phone
+    APPOINTMENT DATE
+    Message
+
+
+// Counter
+* 10 Years of experience
+* 640 Smiling customers
+* 64 Master certificates
+* 69 People working
+
+
+// call to action
+heading: Together we will cure teeth
+button: Book an appointment
+
+
+// Clients Review
+Our client’s reviews
+* Where there is subjectivity, there is an opportunity for art to take place
+*Doctors very professional, very detailed on their work performance and explaining treatments.
+
+
+// Footer
+Logo
+>sec1
+    OPEN HOURS
+        Monday
+        08:00 am - 05:00 pm
+        Tuesday
+        10:00 am - 07:00 pm
+        Wednesday
+        09:00 am - 06:00 pm
+        Thursday
+        09:00 am - 06:00 pm
+        Friday
+        08:00 am - 04:00 pm
+>sec2
+    CONTACTS / KEEP IN TOUCH
+        E-mail: info@example.com
+        Call: +(61) 123 456 7890
+        Fax: +(61) 123 456 7890
+        The office is in the same parking lot at McDonalds. Haharina street 27, Odessa city.
+>sec3
+    Menu
+
+// Footer Bottom
+copyright text: Copyright © 2018, All Rights Reserved
+social: fb, insta, twitter

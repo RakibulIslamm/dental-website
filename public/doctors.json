@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Dr.Samanta",
+    "img": "https://i.ibb.co/9czNknL/doctors-img-1-2x-crop-u8372.jpg",
+    "title": "Dentist"
+  },
+  {
+    "id": 2,
+    "name": "Dr.Mark",
+    "img": "https://i.ibb.co/pbqpQZs/team-08-540x640.jpg/",
+    "title": "Dentist"
+  },
+  {
+    "id": 3,
+    "name": "Dr.Rebecca",
+    "img": "https://i.ibb.co/yywCcC8/doctors-img-3-2x.jpg",
+    "title": "Dentist"
+  },
+  {
+    "id": 4,
+    "name": "Dr.Robert",
+    "img": "https://i.ibb.co/1LGpNsb/team-02-540x640.jpg",
+    "title": "Dentist"
+  },
+  {
+    "id": 5,
+    "name": "Dr.Pitter Moris",
+    "img": "https://i.ibb.co/9p8mFdN/doctors-img-4-2x-crop-u9102.jpg",
+    "title": "Dentist"
+  },
+  {
+    "id": 6,
+    "name": "Dr.Ostin Green",
+    "img": "https://i.ibb.co/X783YyB/doctors-img-2-2x.jpg",
+    "title": "Dentist"
+  }
+]
