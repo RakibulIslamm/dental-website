@@ -13,7 +13,6 @@ const Home = () => {
         <div id="home">
             <Banner></Banner>
 
-            {/* Home Page Services */}
             <div className="py-12">
                 <h1 className=" text-4xl text-center font-bold mb-8">Services</h1>
                 <div className="px-12 grid grid-cols-3 gap-4 align-middle">
@@ -25,7 +24,6 @@ const Home = () => {
 
             <Counter></Counter>
 
-            {/* Home Page Doctors */}
             <div className="py-12">
                 <h1 className=" text-4xl text-center font-bold mb-8">Doctors</h1>
                 <div className="px-12 grid grid-cols-3 gap-4 align-middle">
@@ -34,11 +32,6 @@ const Home = () => {
                     }
                 </div>
                 <Link to="/doctors" className="text-center block text-blue-900 underline">See All Doctors &#x3e;&#x3e;</Link>
-            </div>
-
-            {/* Call to Action */}
-            <div>
-                this is call to action
             </div>
         </div>
     );

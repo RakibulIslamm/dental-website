@@ -13,6 +13,7 @@ import Doctors from './Pages/Doctors/Doctors';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import ContextProvider from './Context/ContextProvider';
 import Appointment from './Pages/Appointment/Appointment';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -45,12 +46,12 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
-            <Route path="/service/:serviceId">
+            <PrivateRoute path="/service/:serviceId">
               <ServiceDetails></ServiceDetails>
-            </Route>
-            <Route path="/appointment">
+            </PrivateRoute>
+            <PrivateRoute path="/appointment">
               <Appointment></Appointment>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
