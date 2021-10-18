@@ -2,7 +2,7 @@ import React from 'react';
 
 const Login = () => {
     return (
-        <div>
+        <div className="min-h-screen flex justify-center items-center">
             This is login
         </div>
     );

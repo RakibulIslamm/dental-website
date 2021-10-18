@@ -17,7 +17,7 @@ const Header = () => {
                     <span className=" text-3xl font-bold">Dental</span>
                 </Link>
             </div>
-            <div className="w-full flex justify-end gap-4">
+            <div className="w-full flex justify-end items-center gap-4">
                 <Link to="/login">
                     <button className=" font-semibold">Sign In</button>
                 </Link>
