@@ -4,7 +4,7 @@ import counterBanner from '../../../images/dental-clinic-e1489767967707.jpg'
 const Counter = () => {
     return (
         <div style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(${counterBanner})`
+            backgroundImage: `linear-gradient(rgba(30, 58, 138, .9), rgba(30, 58, 138, .9)), url(${counterBanner})`
         }} className=" grid grid-cols-4 gap-4 px-12 py-8 bg-cover bg-center">
             <div className="text-center text-white py-8 space-x-4">
                 <h1 className=" text-5xl font-bold">10</h1>
