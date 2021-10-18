@@ -18,8 +18,12 @@ const Header = () => {
                 </Link>
             </div>
             <div className="w-full flex justify-end gap-4">
-                <button className=" font-semibold">Sign In</button>
-                <button className=" font-semibold bg-red-500 py-1 px-4 rounded-full text-white">Sign Up</button>
+                <Link to="/login">
+                    <button className=" font-semibold">Sign In</button>
+                </Link>
+                <Link to="/register">
+                    <button className=" font-semibold bg-red-500 py-1 px-4 rounded-full text-white">Sign Up</button>
+                </Link>
             </div>
         </div>
     );

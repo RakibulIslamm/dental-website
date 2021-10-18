@@ -1,8 +1,8 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Counter from '../Counter/Counter';
-import Services from '../Services/Services';
-import Doctors from './Doctors/Doctors';
+import Services from '../../Services/Services';
+import Doctors from '../Doctors/Doctors';
 
 const Home = () => {
     return (
