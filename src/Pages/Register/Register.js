@@ -9,7 +9,10 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
-    const { user, setUser, signUp, error, setError, setUserName, logOut } = useAuth();
+    const { user, setUser, signUp, isLoading, setIsLoading, error, setError, setUserName, logOut } = useAuth();
+    if (isLoading) {
+        return <h3 className=" text-xl font-bold text-center py-20">Loading...</h3>
+    }
 
     // Get Name
     const getNameFromInput = (e) => {
@@ -39,7 +42,8 @@ const Register = () => {
                 })
                 .catch(error => {
                     setError(error.message);
-                });
+                })
+                .finally(() => setIsLoading(false));
         }
         else {
             setError("Password Doesn't match")

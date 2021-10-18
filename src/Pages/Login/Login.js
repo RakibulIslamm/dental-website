@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router';
 import googleIcon from '../../images/google.png'
 import useAuth from '../../hooks/useAuth';
 
@@ -7,21 +8,26 @@ const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const location = useLocation();
+    const history = useHistory();
 
-    const { user, googleSignIn, setUser, signIn, error, setError, logOut } = useAuth();
-    setError('');
+    const { user, googleSignIn, setUser, signIn, isLoading, setIsLoading, error, setError, logOut } = useAuth();
+    if (isLoading) {
+        return <h3 className=" text-xl font-bold text-center py-20">Loading...</h3>
+    }
     // Google Sign In
     const handleGoogleSignIn = () => {
         setError('');
         googleSignIn()
             .then(result => {
                 setUser(result.user);
+                history.push(location.state?.from || "/");
             })
             .catch(error => {
                 setError(error.message);
             })
             .finally(() => {
-
+                setIsLoading(false);
             });
     }
 

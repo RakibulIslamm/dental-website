@@ -8,11 +8,11 @@ firebaseAuthInit();
 const useFirebase = () => {
     const [user, setUser] = useState(null);
     const [error, setError] = useState('');
-    // const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
+
+
+
     const auth = getAuth();
-
-
-
     // Register
     const signUp = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password);
@@ -38,6 +38,7 @@ const useFirebase = () => {
             .catch(error => {
                 setError(error.code);
             })
+            .finally(() => setIsLoading(false));
     }
 
     // onAuthStateChanged
@@ -49,6 +50,7 @@ const useFirebase = () => {
             else {
 
             }
+            setIsLoading(false);
         });
         return () => unsubscribe();
     }, [])
@@ -59,6 +61,7 @@ const useFirebase = () => {
             .then(() => {
                 setUser(null);
             })
+            .finally(() => setIsLoading(false));
     };
 
     return {
@@ -68,6 +71,8 @@ const useFirebase = () => {
         signIn,
         googleSignIn,
         setUserName,
+        isLoading,
+        setIsLoading,
         logOut
 
     }
