@@ -1,10 +1,22 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { useHistory } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/logo.png'
 
 const Header = () => {
-    const { user, logOut, isLoading } = useAuth();
+    const { user, logOut, isLoading, setIsLoading, setUser } = useAuth();
+    const history = useHistory();
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                setUser(null);
+                history.push("/");
+            })
+            .finally(() => setIsLoading(false));
+    }
+
     return (
         <div className="px-12 py-4 bg-blue-900 text-white flex items-center justify-between shadow-lg sticky top-0 z-10">
             <div className="flex gap-6 w-full font-semibold">
@@ -35,7 +47,7 @@ const Header = () => {
                         {
                             user && <div className="w-full flex justify-end items-center gap-8">
                                 <p className="text-lg font-semibold">{user.displayName}</p>
-                                <button onClick={logOut} className="font-semibold bg-white py-2 px-8 text-blue-900">Sign Out</button>
+                                <button onClick={handleLogOut} className="font-semibold bg-white py-2 px-8 text-blue-900">Sign Out</button>
                             </div>
                         }
                     </div>

@@ -57,6 +57,16 @@ const Login = () => {
             });
     }
 
+    // Log Out
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                setUser(null);
+                history.push("/");
+            })
+            .finally(() => setIsLoading(false));
+    }
+
 
     const inputStyle = "py-2 px-6 w-96 border border-gray-400 rounded outline-none";
     const btnStyle = "py-2 px-6 w-96 rounded bg-blue-900 text-white cursor-pointer hover:opacity-90 transition-all duration-200";
@@ -85,7 +95,7 @@ const Login = () => {
             {
                 user && <div>
                     <p>Hey {user.displayName}, you already logged in</p>
-                    <button onClick={logOut} className="text-lg font-semibold text-red-400">{`<<`} Log Out</button>
+                    <button onClick={handleLogOut} className="text-lg font-semibold text-red-400">{`<<`} Log Out</button>
                 </div>
             }
         </div>
