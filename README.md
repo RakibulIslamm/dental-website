@@ -2,7 +2,7 @@
 
 This project was build by tailwind and [Create React App](https://github.com/facebook/create-react-app).
 
-Dental [Visit](https://dental-assignment-10.web.app/).
+Dental live link [Visit](https://dental-assignment-10.web.app/).
 
 * What is it?
     * This is  Dental care site.
