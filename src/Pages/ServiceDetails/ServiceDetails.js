@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import useData from '../../useData/useData';
