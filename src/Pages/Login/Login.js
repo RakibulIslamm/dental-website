@@ -73,7 +73,7 @@ const Login = () => {
     return (
         <div className="min-h-screen flex justify-center items-center xs:px-4">
             {
-                !user && <div className="w-full border border-gray-300 p-20 xs:p-4 shadow-md">
+                !user && <div className="xs:w-full border border-gray-300 p-20 xs:p-4 shadow-md">
                     <h2 className="text-center text-3xl text-gray-600 font-bold mb-8">Login</h2>
                     <form className="space-y-3">
                         <input onBlur={getEmailFromInput} className={inputStyle} type="text" placeholder="Email" />

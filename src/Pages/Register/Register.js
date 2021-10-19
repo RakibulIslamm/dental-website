@@ -56,10 +56,10 @@ const Register = () => {
     const inputStyle = "py-2 px-6 w-96 xs:w-full sm:w-full border border-gray-400 rounded outline-none";
     const btnStyle = "py-2 px-6 w-96 xs:w-full sm:w-full rounded bg-blue-900 text-white cursor-pointer hover:opacity-90 transition-all duration-200";
     return (
-        <div className="lg:min-h-screen lg:flex justify-center items-center xs:px-4 sm:px-6 xs:py-10 sm:py-12">
+        <div className="min-h-screen flex justify-center items-center xs:px-4 sm:px-6">
             {
                 !user &&
-                <div className="border border-gray-300 p-12 xs:p-4 sm:px-6 shadow-md">
+                <div className=" xs:w-full sm:w-full border border-gray-300 p-12 xs:p-4 sm:px-6 shadow-md">
                     <h2 className="text-center text-3xl text-gray-600 font-bold mb-8">Sign Up</h2>
                     <form className="space-y-3">
                         <input onBlur={getNameFromInput} className={inputStyle} type="text" placeholder="Name" />
