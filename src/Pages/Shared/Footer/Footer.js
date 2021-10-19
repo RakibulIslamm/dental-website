@@ -12,7 +12,9 @@ const Footer = () => {
                     <span className=" text-3xl font-bold">Dental</span>
                 </Link>
                 <p>A full range of cosmetic dentistry treatment!</p>
-                <button className="px-6 py-2 bg-white text-black font-semibold shadow-none hover:opacity-90 hover:shadow-xl transition-all duration-300">Book an appointment</button>
+                <Link className=" block" to="/appointment">
+                    <button className="px-6 py-2 text-blue-900 bg-white font-semibold shadow-none hover:opacity-90 hover:shadow-xl transition-all duration-300">Book an appointment</button>
+                </Link>
             </div>
             <div>
                 <h3 className=" text-xl font-bold">OPEN HOURS</h3>
