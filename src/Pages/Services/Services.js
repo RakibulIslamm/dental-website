@@ -10,7 +10,7 @@ const Services = () => {
             <div className="bg-gray-200 text-gray-900 text-4xl font-bold flex justify-center items-center">
                 <PageTitle title="Services"></PageTitle>
             </div>
-            <div className="px-12 grid grid-cols-3 gap-4 align-middle my-12">
+            <div className="px-12 xs:px-4 grid grid-cols-3 xs:grid-cols-1 sm:grid-cols-1 gap-4 align-middle my-12">
                 {
                     services.map(service => <Service key={service.id} service={service}></Service>)
                 }

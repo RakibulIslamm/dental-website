@@ -5,7 +5,7 @@ import logo from '../../../images/logo.png'
 
 const Footer = () => {
     return (
-        <div className="px-12 py-12 bg-indigo-900 text-white grid grid-cols-4 gap-4">
+        <div className="px-12 xs:px-6 py-12 bg-indigo-900 text-white grid grid-cols-4 xs:grid-cols-1 gap-4 xs:gap-8">
             <div className="space-y-3">
                 <Link className="flex items-center" to="/">
                     <img className=" w-12" src={logo} alt="" />

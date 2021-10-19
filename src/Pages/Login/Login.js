@@ -68,12 +68,12 @@ const Login = () => {
     }
 
 
-    const inputStyle = "py-2 px-6 w-96 border border-gray-400 rounded outline-none";
-    const btnStyle = "py-2 px-6 w-96 rounded bg-blue-900 text-white cursor-pointer hover:opacity-90 transition-all duration-200";
+    const inputStyle = "py-2 px-6 w-96 xs:w-full border border-gray-400 rounded outline-none";
+    const btnStyle = "py-2 px-6 w-96 xs:w-full rounded bg-blue-900 text-white cursor-pointer hover:opacity-90 transition-all duration-200";
     return (
-        <div className="min-h-screen flex justify-center items-center">
+        <div className="min-h-screen flex justify-center items-center xs:px-4">
             {
-                !user && <div className="border border-gray-300 p-20 shadow-md">
+                !user && <div className="w-full border border-gray-300 p-20 xs:p-4 shadow-md">
                     <h2 className="text-center text-3xl text-gray-600 font-bold mb-8">Login</h2>
                     <form className="space-y-3">
                         <input onBlur={getEmailFromInput} className={inputStyle} type="text" placeholder="Email" />
@@ -83,7 +83,7 @@ const Login = () => {
                         <input onClick={handleEmailPasswordSignIn} className={btnStyle} type="submit" value="Login" />
                     </form>
                     <p className="text-red-500 text-xs italic">{error}</p>
-                    <div className="flex justify-start gap-3 items-center mt-4">
+                    <div className="flex justify-start xs:flex-col xs:gap-1 gap-3 items-center mt-4">
                         <button onClick={handleGoogleSignIn} className="flex justify-center items-center gap-4 px-4 py-2 border border-gray-400 hover:shadow-lg">
                             <img className="w-4" src={googleIcon} alt="" /> Google Sign In
                         </button>

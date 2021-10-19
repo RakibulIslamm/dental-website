@@ -18,17 +18,17 @@ const Header = () => {
     }
 
     return (
-        <div className="px-12 py-4 bg-blue-900 text-white flex items-center justify-between shadow-lg sticky top-0 z-10">
-            <div className="flex gap-6 w-full font-semibold">
+        <div className="lg:px-12 lg:py-4 sm:py-2 xs:py-2 bg-blue-900 text-white flex items-center justify-between shadow-lg sticky top-0 z-10 sm:px-2">
+            <div className="lg:flex gap-6 w-full font-semibold sm:hidden xs:hidden">
                 <NavLink to="/home">Home</NavLink>
                 <NavLink to="/services">Services</NavLink>
                 <NavLink to="/about">About Us</NavLink>
                 <NavLink to="/appointment">Appointment</NavLink>
             </div>
-            <div className="w-full flex justify-center">
+            <div className="w-full flex lg:justify-center sm:justify-start">
                 <Link className="flex items-center" to="/">
-                    <img className=" w-12" src={logo} alt="" />
-                    <span className=" text-3xl font-bold">Dental</span>
+                    <img className="w-12 xs:w-10" src={logo} alt="" />
+                    <span className=" text-3xl xs:text-xl font-bold">Dental</span>
                 </Link>
             </div>
             {
@@ -40,14 +40,14 @@ const Header = () => {
                                     <button className="font-semibold">Sign In</button>
                                 </Link>
                                 <Link to="/register">
-                                    <button className="font-semibold bg-white py-2 px-8 text-blue-900">Sign Up</button>
+                                    <button className="font-semibold bg-white py-2 px-8 text-blue-900 xs:hidden">Sign Up</button>
                                 </Link>
                             </div>
                         }
                         {
                             user && <div className="w-full flex justify-end items-center gap-8">
-                                <p className="text-lg font-semibold">{user.displayName}</p>
-                                <button onClick={handleLogOut} className="font-semibold bg-white py-2 px-8 text-blue-900">Sign Out</button>
+                                <p className="text-lg font-semibold xs:hidden">{user.displayName}</p>
+                                <button onClick={handleLogOut} className="font-semibold bg-white xs:bg-transparent xs:text-white py-2 px-8 text-blue-900">Sign Out</button>
                             </div>
                         }
                     </div>
