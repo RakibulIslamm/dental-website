@@ -47,7 +47,7 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 setUser(result.user);
-                setEmail('');
+                history.push(location.state?.from || "/");
             })
             .catch(error => {
                 setError(error.code);
