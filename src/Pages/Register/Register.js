@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
@@ -8,6 +9,9 @@ const Register = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+
+    const location = useLocation();
+    const history = useHistory();
 
     const { user, setUser, signUp, isLoading, setIsLoading, error, setError, setUserName, logOut } = useAuth();
     if (isLoading) {
@@ -39,6 +43,7 @@ const Register = () => {
                 .then(result => {
                     setUser(result.user);
                     setUserName(name);
+                    history.push(location.state?.from || "/");
                 })
                 .catch(error => {
                     setError(error.message);
@@ -49,6 +54,16 @@ const Register = () => {
             setError("Password Doesn't match")
         }
 
+    }
+
+    // Log Out
+    const handleLogOut = () => {
+        logOut()
+            .then(() => {
+                setUser(null);
+                history.push("/");
+            })
+            .finally(() => setIsLoading(false));
     }
 
 
@@ -80,7 +95,7 @@ const Register = () => {
             {
                 user && <div>
                     <p>Hey {user.displayName}, you already Registered and also has logged in</p>
-                    <button onClick={logOut} className="text-lg font-semibold text-red-400">{`<<`} Log Out</button>
+                    <button onClick={handleLogOut} className="text-lg font-semibold text-red-400">{`<<`} Log Out</button>
                 </div>
             }
         </div>
